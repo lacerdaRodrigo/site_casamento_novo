@@ -1,0 +1,13 @@
+# Arquivos do Sistema
+.DS_Store
+Thumbs.db
+
+# Pastas Temporárias
+.gemini/
+/home/rodrigo/.gemini/tmp/
+
+# Logs e outros
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vscode/
