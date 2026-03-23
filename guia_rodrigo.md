@@ -1,68 +1,51 @@
-# 💍 Guia de Manutenção e Configuração (Rodrigo)
+# 💍 Guia de Manutenção e Gestão (Rodrigo)
 
-Este guia contém todas as orientações necessárias para você mesmo realizar as edições e atualizações no site de casamento de Rodrigo & Jennifer.
-
----
-
-### 1. Como adicionar novas fotos na galeria
-Para adicionar, remover ou editar fotos, abra o arquivo `assets/data/gallery.json`. 
-Cada foto é um "bloco" de código que segue este padrão:
-
-```json
-{
-    "url": "LINK_DA_FOTO",
-    "description": "DESCRIÇÃO",
-    "date": "DATA",
-    "location": "LOCAL"
-}
-```
-
-**Dica:** Você pode usar links de fotos que subiu no Google Drive (com link público), Imgur ou qualquer serviço de hospedagem de imagens.
+Este guia contém todas as informações para gerenciar o site de casamento de Rodrigo & Jennifer (Versão Ultra Responsiva 3.1).
 
 ---
 
-### 2. Como receber as confirmações de presença (RSVP) no seu e-mail
-O site usa o serviço gratuito **Formspree** para te avisar quando alguém confirmar presença.
-1. Crie uma conta gratuita em [formspree.io](https://formspree.io/).
-2. Crie um novo formulário (clique em "New Form") e nomeie como "RSVP Casamento".
-3. Copie o **ID do formulário** (algo como `mjvnbnrz`) que eles fornecerem.
-4. No arquivo `index.html`, procure a linha:
-   `<form id="rsvp-form" action="https://formspree.io/f/seu-id-aqui" method="POST">`
-5. Substitua `seu-id-aqui` pelo seu novo ID.
+### 1. O Cérebro do Site: `assets/data/content.json`
+Todo o conteúdo do site é controlado por este único arquivo. Para mudar textos, fotos ou links, edite os campos do JSON:
+- **`settings`**: Títulos e ID do RSVP.
+- **`hero`**: Nome principal e data.
+- **`story`**: Sua história (parágrafos ilimitados).
+- **`gallery`**: Lista de fotos (URL, descrição, data, local).
+- **`traje`**: Orientações para convidados.
+- **`faq`**: Perguntas frequentes.
+- **`gifts`**: Links de afiliados (Shopee e Mercado Livre).
+- **`location`**: Detalhes do local e link do mapa.
 
 ---
 
-### 3. Como alterar os links de presentes (Afiliados)
-Para ganhar comissão sobre os presentes, você deve usar seus links de afiliado.
-1. No arquivo `index.html`, procure pela seção `gifts-grid`.
-2. Altere o link dentro das aspas do `href=""` para o seu link oficial da Shopee ou Mercado Livre.
-   *Exemplo:* `href="https://shope.ee/seu-link-de-afiliado"`
+### 2. Design e Responsividade (O Que Saber)
+- **Menu Mobile (Horizontal Sequencial):** O site usa uma navegação moderna onde todos os itens aparecem no topo em uma única linha. Não estranhe se no celular as fontes parecerem pequenas; isso foi feito para que todos os 8 itens (Início até Local) caibam perfeitamente na tela do seu celular, sem cortes e sem menu oculto.
+- **Header Compacto:** Reduzimos a altura para **40px** para sobrar mais espaço para o conteúdo e as fotos.
 
 ---
 
-### 4. Como adicionar anúncios (Google AdSense)
-Para monetizar as visualizações do site:
-1. No arquivo `index.html`, procure pelas `divs` com a classe `ad-container`. 
-2. Existem três locais (Topo, Meio e Rodapé). 
-3. Substitua o texto "Anúncio Google AdSense..." pelo código (script) que o Google AdSense te fornecer para banners.
+### 3. Como configurar o RSVP (Confirmação de Presença)
+1. Crie uma conta em [formspree.io](https://formspree.io/).
+2. Obtenha o seu **ID de formulário** (ex: `mjvnbnrz`).
+3. No arquivo `assets/data/content.json`, substitua o valor do campo `"rsvpEmailId"` pelo seu novo ID.
 
 ---
 
-### 5. Como testar o site localmente (No seu PC)
-Como o site carrega dados dinâmicos (a galeria), você precisa rodar um mini servidor local:
-1. Abra o terminal na pasta do projeto.
-2. Execute o comando:
-   ```bash
-   python3 -m http.server 8000
-   ```
-3. No seu navegador, acesse: `http://localhost:8000`
+### 4. Checklist para Aprovação no AdSense 🟢
+1.  **Robots.txt:** Está na raiz, essencial para o Google ler seu site.
+2.  **Conteúdo Rico:** Se o Google reclamar de "Baixo Valor", abra o `content.json` e escreva parágrafos maiores na história ou adicione 5 novas perguntas no FAQ.
+3.  **Ad Placement:** Removemos o anúncio do topo para acelerar a aprovação (política de *ads above the fold*).
 
 ---
 
-### 6. Como publicar o site na internet (Grátis)
-Recomendo usar o **GitHub Pages**:
-1. Crie um repositório no seu GitHub chamado `casamento`.
-2. Suba todos os arquivos para lá.
-3. Vá em **Settings > Pages**.
-4. Em "Branch", selecione `main` e a pasta `/(root)`.
-5. Salve e o site estará no ar em poucos minutos no endereço: `https://seu-usuario.github.io/casamento/`
+### 5. Como testar no computador
+Abra o terminal na pasta e execute:
+`python3 -m http.server 8000`
+Acesse: `http://localhost:8000`
+
+---
+
+### 6. Como Vender como Modelo (Template)
+Este site foi desenhado para ser um produto de revenda:
+- **Facilidade:** O comprador só edita um arquivo JSON.
+- **Design:** Responsividade de alta fidelidade que funciona em celulares modernos.
+- **Monetização:** Já estruturado para anúncios do Google.
