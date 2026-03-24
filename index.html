@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title">Rodrigo & Jennifer - Nosso Casamento</title>
+    <title id="titulo-aba">Rodrigo & Jennifer - Nosso Casamento</title>
 
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5131630946426370"
@@ -16,7 +16,7 @@
     <meta name="keywords" content="casamento, Rodrigo e Jennifer, RSVP, lista de presentes, Belo Horizonte">
     <meta name="author" content="Rodrigo">
 
-    <!-- Open Graph / Social Media -->
+    <!-- Open Graph / Redes Sociais -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Rodrigo & Jennifer - Nosso Casamento">
     <meta property="og:description"
@@ -42,12 +42,13 @@
 
 <body>
 
-    <!-- Header / Navegação -->
-    <header id="navbar">
-        <nav class="container nav-container">
-            <ul class="nav-list">
+    <!-- Cabeçalho / Navegação -->
+    <header id="barra-navegacao">
+        <nav class="container container-navegacao">
+            <ul class="lista-navegacao">
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#historia">História</a></li>
+                <li><a href="#guia-bh">Guia BH</a></li>
                 <li><a href="#galeria">Momentos</a></li>
                 <li><a href="#traje">Traje</a></li>
                 <li><a href="#faq">Dúvidas</a></li>
@@ -58,51 +59,75 @@
         </nav>
     </header>
 
-    <!-- Seção Hero -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1 id="hero-title" class="couple-name">Rodrigo & Jennifer</h1>
-            <p id="hero-subtitle" class="subtitle">O grande dia está chegando!</p>
-            <div class="date-container">
-                <span id="wedding-date" class="wedding-date">Em breve...</span>
+    <!-- Seção Início (Hero) -->
+    <section id="inicio" class="secao-inicio">
+        <div class="conteudo-inicio">
+            <h1 id="inicio-titulo" class="nome-casal">Rodrigo & Jennifer</h1>
+            <p id="inicio-subtitulo" class="subtitulo">O grande dia está chegando e queremos você conosco!</p>
+            <div class="container-data">
+                <span id="data-casamento" class="data-casamento">28 de Setembro de 2026</span>
             </div>
         </div>
     </section>
 
-    <!-- Seção de Introdução (Nossa História) -->
-    <section id="historia" class="story-section section-padding">
+    <!-- Seção História -->
+    <section id="historia" class="secao-historia preenchimento-secao">
         <div class="container">
-            <h2 id="story-title" class="section-title">Nossa História</h2>
-            <div id="story-content" class="story-content">
-                <!-- Parágrafos serão carregados via JS -->
+            <h2 id="historia-titulo" class="titulo-secao">Nossa História de Amor</h2>
+            <div id="historia-conteudo" class="conteudo-historia">
+                <p>Nossa jornada começou de uma forma muito especial, em um encontro casual que mudou o rumo de nossas vidas para sempre. Rodrigo e Jennifer iniciaram essa caminhada com um simples 'olá', repleto de timidez, mas que logo se transformou em conversas profundas que duravam horas. Desde então, cada dia tem sido uma oportunidade única de descoberta, aprendizado mútuo e, acima de tudo, muita alegria compartilhada.</p>
+                <p>Ao longo desses anos, construímos uma base sólida feita de sorrisos sinceros, viagens inesquecíveis, desafios que superamos segurando a mão um do outro e um amor que cresce a cada novo amanhecer. Aprendemos que o amor não é apenas um sentimento, mas uma decisão diária de cuidar, respeitar e sonhar juntos, construindo um futuro onde a felicidade do outro é a nossa própria.</p>
+                <p>A decisão de casar veio como um amadurecimento natural de tudo o que vivemos. Percebemos que não queríamos apenas passar o tempo juntos, mas sim construir uma vida inteira compartilhada. O pedido de casamento foi um momento mágico que selou nosso compromisso e nos trouxe até aqui, ansiosos para celebrar este capítulo com nossos amigos e familiares mais queridos.</p>
+                <p>Agora, estamos prontos e imensamente felizes para dar o passo mais importante de nossas vidas. Este site foi criado para compartilhar cada detalhe desse momento mágico com as pessoas que fazem parte da nossa história e que tanto amamos. Queremos que você se sinta parte dessa celebração desde agora. Sejam muito bem-vindos ao nosso grande dia!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Guia de Belo Horizonte (NOVO: Valor Editorial para AdSense) -->
+    <section id="guia-bh" class="secao-guia-bh preenchimento-secao" style="background-color: #fff;">
+        <div class="container">
+            <h2 class="titulo-secao">Guia para Convidados em BH</h2>
+            <div class="grade-guia" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 30px;">
+                <div class="item-guia">
+                    <h3 style="color: #d4af37;">Onde se Hospedar</h3>
+                    <p>Para quem vem de fora, recomendamos hotéis nos bairros <strong>Castelo, Pampulha ou no Centro</strong> de Belo Horizonte. Essas regiões oferecem fácil acesso ao local da cerimônia (Vista Alegre) e contam com diversas opções de lazer e gastronomia.</p>
+                </div>
+                <div class="item-guia">
+                    <h3 style="color: #d4af37;">Gastronomia Mineira</h3>
+                    <p>Não deixe de visitar o <strong>Mercado Central</strong> e experimentar o famoso fígado com jiló ou o pão de queijo recheado. Belo Horizonte é a capital mundial dos botecos, então aproveite a rica culinária local!</p>
+                </div>
+                <div class="item-guia">
+                    <h3 style="color: #d4af37;">Pontos Turísticos</h3>
+                    <p>Se tiver um tempinho extra, visite o <strong>Conjunto Moderno da Pampulha</strong> (Patrimônio da UNESCO), a Praça da Liberdade com seus museus incríveis e o Mirante do Mangabeiras para uma vista panorâmica da cidade.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Seção Galeria de Momentos -->
-    <section id="galeria" class="gallery-section section-padding">
+    <section id="galeria" class="secao-galeria preenchimento-secao">
         <div class="container">
-            <h2 class="section-title">Nossos Momentos</h2>
-            <div id="gallery-grid" class="gallery-grid">
-                <!-- Fotos serão carregadas via JavaScript -->
+            <h2 class="titulo-secao">Nossos Momentos</h2>
+            <div id="grade-galeria" class="grade-galeria">
+                <!-- Mantido dinâmico para fotos, mas o texto acima já ajuda no AdSense -->
             </div>
         </div>
     </section>
 
-    <!-- Seção de Dicas de Traje -->
-    <section id="traje" class="traje-section section-padding" style="background-color: #f9f9f9;">
+    <!-- Seção Dicas de Traje -->
+    <section id="traje" class="secao-traje preenchimento-secao" style="background-color: #f9f9f9;">
         <div class="container">
-            <h2 id="traje-title" class="section-title">Dicas de Traje</h2>
-            <div class="traje-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
-                <p id="traje-description"></p>
-                <p id="traje-mulheres" style="margin-top: 20px;"></p>
-                <p id="traje-homens"></p>
+            <h2 id="traje-titulo" class="titulo-secao">Dicas de Traje</h2>
+            <div class="conteudo-traje" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <p id="traje-descricao">Para o nosso grande dia, sugerimos o traje <strong>Passeio Completo</strong> (ou Social). Queremos que todos se sintam elegantes e confortáveis para aproveitar a festa ao máximo!</p>
+                <p id="traje-mulheres" style="margin-top: 20px;"><strong>Para as convidadas:</strong> Vestidos longos ou midi, conjuntos sociais. Recomendamos evitar saltos muito finos, pois teremos áreas com gramado onde o salto pode afundar.</p>
+                <p id="traje-homens"><strong>Para os convidados:</strong> Terno completo ou calça social com camisa e paletó. A gravata é opcional, mas bem-vinda para completar o visual social.</p>
             </div>
         </div>
     </section>
 
-    <!-- Espaço para Anúncio 2 (Meio) -->
-    <div class="ad-container" style="margin: 40px 0; text-align: center;">
+    <!-- Espaço para Anúncio (Meio) -->
+    <div class="container-anuncio" style="margin: 40px 0; text-align: center;">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5131630946426370"
             crossorigin="anonymous"></script>
         <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5131630946426370" data-ad-slot="3200971538"
@@ -112,31 +137,54 @@
         </script>
     </div>
 
-    <!-- Seção Perguntas Frequentes (FAQ) -->
-    <section id="faq" class="faq-section section-padding">
+    <!-- Seção Dúvidas (FAQ) -->
+    <section id="faq" class="secao-faq preenchimento-secao">
         <div class="container">
-            <h2 id="faq-title" class="section-title">Perguntas Frequentes</h2>
-            <div id="faq-grid" class="faq-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px;">
-                <!-- Itens FAQ serão carregados via JS -->
+            <h2 id="duvidas-titulo" class="titulo-secao">Dúvidas Frequentes (FAQ)</h2>
+            <div id="grade-duvidas" class="grade-duvidas">
+                <div class="item-duvida">
+                    <h4 style="color: #d4af37; margin-bottom: 10px;">Até quando devo confirmar minha presença?</h4>
+                    <p>Por favor, confirme sua presença através da seção RSVP neste site até o dia 30 de Agosto de 2026. Isso nos ajuda muito na organização do buffet e dos lugares.</p>
+                </div>
+                <div class="item-duvida">
+                    <h4 style="color: #d4af37; margin-bottom: 10px;">O local possui estacionamento?</h4>
+                    <p>Sim! A Igreja Batista Lagoinha Vista Alegre conta com estacionamento próprio e gratuito para todos os nossos convidados durante o evento.</p>
+                </div>
+                <div class="item-duvida">
+                    <h4 style="color: #d4af37; margin-bottom: 10px;">Posso levar acompanhantes extras?</h4>
+                    <p>Os convites são individuais e nominais baseados na lista de convidados. Pedimos que confirme apenas as pessoas listadas no seu convite oficial.</p>
+                </div>
+                <div class="item-duvida">
+                    <h4 style="color: #d4af37; margin-bottom: 10px;">Haverá lista de presentes física?</h4>
+                    <p>Nossa lista de presentes é totalmente virtual para facilitar para todos. Você pode acessá-la diretamente aqui no site na seção de Presentes.</p>
+                </div>
+                <div class="item-duvida">
+                    <h4 style="color: #d4af37; margin-bottom: 10px;">Qual é o horário da cerimônia?</h4>
+                    <p>A cerimônia terá início pontualmente às 19:30. Recomendamos chegar com pelo menos 20 minutos de antecedência para se acomodar tranquilamente.</p>
+                </div>
+                <div class="item-duvida">
+                    <h4 style="color: #d4af37; margin-bottom: 10px;">Crianças precisam confirmar presença?</h4>
+                    <p>Sim, por favor confirme a presença de todos os membros da família, incluindo crianças acima de 5 anos, para que possamos organizar o espaço adequadamente.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Seção Lista de Presentes -->
-    <section id="lista" class="gifts-section section-padding">
+    <section id="lista" class="secao-presentes preenchimento-secao">
         <div class="container">
-            <h2 class="section-title">Lista de Presentes</h2>
-            <p class="gifts-intro">Fizemos uma seleção especial de itens para o nosso novo lar. Clique nos botões abaixo
+            <h2 class="titulo-secao">Lista de Presentes</h2>
+            <p class="introducao-presentes">Fizemos uma seleção especial de itens para o nosso novo lar. Clique nos botões abaixo
                 para ver nossas listas oficiais:</p>
-            <div class="gifts-grid">
-                <a id="gift-shopee" href="#" class="gift-btn shopee-btn" data-affiliate="shopee">
+            <div class="grade-presentes">
+                <a id="presente-shopee" href="#" class="btn-presente btn-shopee">
                     <img src="https://logodownload.org/wp-content/uploads/2021/03/shopee-logo-0.png" alt="Shopee Logo"
                         height="24">
                     <span>Ver lista na Shopee</span>
                 </a>
-                <a id="gift-ml" href="#" class="gift-btn mercado-btn" data-affiliate="mercado-livre">
+                <a id="presente-ml" href="#" class="btn-presente btn-mercado">
                     <img src="https://logodownload.org/wp-content/uploads/2014/10/mercado-livre-logo-3.png"
-                        alt="" height="24">
+                        alt="Mercado Livre Logo" height="24">
                     <span>Ver lista no Mercado Livre</span>
                 </a>
             </div>
@@ -144,63 +192,61 @@
     </section>
 
     <!-- Seção RSVP (Confirmação de Presença) -->
-    <section id="rsvp" class="rsvp-section section-padding">
+    <section id="rsvp" class="secao-rsvp preenchimento-secao">
         <div class="container">
-            <h2 id="rsvp-title" class="section-title">Confirmar Presença</h2>
-            <p id="rsvp-intro" class="rsvp-intro"></p>
+            <h2 id="confirmacao-titulo" class="titulo-secao">Confirmar Presença</h2>
+            <p id="confirmacao-introducao" class="introducao-rsvp"></p>
 
-            <div class="rsvp-form-container">
-                <form id="rsvp-form" action="https://formspree.io/f/xqeynvjp" method="POST">
-                    <div class="form-group">
-                        <label for="name">Nome Completo</label>
-                        <input type="text" id="name" name="name" required placeholder="Digite seu nome completo">
+            <div class="container-formulario-rsvp">
+                <form id="formulario-rsvp" action="https://formspree.io/f/xqeynvjp" method="POST">
+                    <div class="grupo-formulario">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
                     </div>
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="phone">Telefone / WhatsApp</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="(00) 00000-0000">
+                    <div class="linha-formulario">
+                        <div class="grupo-formulario">
+                            <label for="telefone">Telefone / WhatsApp</label>
+                            <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
                         </div>
-                        <div class="form-group">
+                        <div class="grupo-formulario">
                             <label for="email">E-mail</label>
                             <input type="email" id="email" name="email" required placeholder="seu@email.com">
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="message">Sua Mensagem (Opcional)</label>
-                        <textarea id="message" name="message" rows="4"
+                    <div class="grupo-formulario">
+                        <label for="mensagem">Sua Mensagem (Opcional)</label>
+                        <textarea id="mensagem" name="mensagem" rows="4"
                             placeholder="Alguma observação ou mensagem carinhosa?"></textarea>
                     </div>
 
-                    <div class="form-group checkbox-group">
-                        <label class="checkbox-container">
-                            <input type="checkbox" name="consent" required>
-                            <span class="checkmark"></span>
+                    <div class="grupo-formulario grupo-checkbox">
+                        <label class="container-checkbox">
+                            <input type="checkbox" name="consentimento" required>
+                            <span class="marca-checkbox"></span>
                             Concordo com o processamento dos meus dados para fins de organização do evento.
                         </label>
                     </div>
 
-                    <button type="submit" id="submit-btn" class="btn-primary">Enviar Confirmação</button>
-
-                    <div id="form-status" class="form-status"></div>
+                    <button type="submit" class="btn-primario">Enviar Confirmação</button>
                 </form>
             </div>
         </div>
     </section>
 
     <!-- Seção Local do Casamento -->
-    <section id="local" class="location-section section-padding">
+    <section id="local" class="secao-localizacao preenchimento-secao">
         <div class="container">
-            <h2 id="local-title" class="section-title">Onde será nosso dia</h2>
-            <div class="location-info">
-                <h3 id="venue-name"></h3>
-                <p id="venue-address"></p>
-                <p id="venue-city"></p>
-                <a id="maps-link" href="#" target="_blank" class="btn-maps">Ver no Google Maps</a>
+            <h2 id="local-titulo" class="titulo-secao">Onde será nosso dia</h2>
+            <div class="info-localizacao">
+                <h3 id="nome-local"></h3>
+                <p id="endereco-local"></p>
+                <p id="cidade-local"></p>
+                <a id="link-mapa" href="#" target="_blank" class="btn-mapas">Ver no Google Maps</a>
             </div>
-            <div class="map-container">
-                <iframe id="map-iframe"
+            <div class="container-mapa">
+                <iframe id="iframe-mapa"
                     src=""
                     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
@@ -208,67 +254,70 @@
             </div>
         </div>
     </section>
-    <div id="image-modal" class="modal">
-        <span class="modal-close">&times;</span>
-        <img class="modal-content" id="modal-img">
-        <div id="modal-caption" class="modal-caption"></div>
+
+    <!-- Modais -->
+    <div id="modal-imagem" class="modal">
+        <span class="fechar-modal">&times;</span>
+        <img class="conteudo-modal" id="img-modal">
+        <div id="legenda-modal" class="legenda-modal"></div>
     </div>
 
-    <!-- Modal de Confirmação de Afiliado -->
-    <div id="affiliate-modal" class="modal">
-        <div class="modal-dialog">
-            <div class="modal-header">
+    <!-- Modal de Aviso Afiliado -->
+    <div id="modal-afiliado" class="modal">
+        <div class="dialogo-modal">
+            <div class="cabecalho-modal">
                 <h3>Aviso Importante</h3>
             </div>
-            <div class="modal-body">
+            <div class="corpo-modal">
                 <p>"Caso você encontre um produto da nossa lista com um valor menor, nos mande uma mensagem que
                     enviaremos um novo link com a nossa comissão."</p>
             </div>
-            <div class="modal-footer">
-                <button id="confirm-affiliate" class="btn-confirm">OK, Entendi!</button>
+            <div class="rodape-modal">
+                <button id="btn-confirmar-afiliado" class="btn-confirmar">OK, Entendi!</button>
             </div>
         </div>
     </div>
 
     <!-- Modal de Sucesso RSVP -->
-    <div id="rsvp-success-modal" class="modal">
-        <div class="modal-dialog">
-            <div class="modal-header success-header">
+    <div id="modal-sucesso-rsvp" class="modal">
+        <div class="dialogo-modal">
+            <div class="cabecalho-modal cabecalho-sucesso">
                 <h3>Obrigado! 💍</h3>
             </div>
-            <div class="modal-body">
+            <div class="corpo-modal">
                 <p>Sua confirmação foi enviada com sucesso! Ficamos muito felizes em saber que você estará conosco nesse
                     dia tão especial.</p>
             </div>
-            <div class="modal-footer">
-                <button id="close-rsvp-success" class="btn-confirm btn-success-confirm">OK, Combinado!</button>
+            <div class="rodape-modal">
+                <button id="btn-fechar-sucesso" class="btn-confirmar">OK, Combinado!</button>
             </div>
         </div>
     </div>
 
-    <!-- Espaço para Anúncio 3 (Rodapé) -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5131630946426370"
-        crossorigin="anonymous"></script>
-    <!-- <div class="ad-container ad-bottom"> -->
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5131630946426370" data-ad-slot="7084376223"
-        data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+    <!-- Espaço para Anúncio (Rodapé) -->
+    <div class="container-anuncio" style="margin: 20px 0; text-align: center;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5131630946426370"
+            crossorigin="anonymous"></script>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5131630946426370" data-ad-slot="7084376223"
+            data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
 
     <!-- Rodapé -->
     <footer>
-        <div class="container footer-content">
-            <p id="footer-text"></p>
+        <div class="container conteudo-rodape">
+            <p id="texto-rodape"></p>
         </div>
     </footer>
 
     <!-- Banner de Cookies (LGPD) -->
-    <div id="cookie-banner" class="cookie-banner">
-        <div class="cookie-content">
+    <div id="banner-cookies" class="banner-cookies">
+        <div class="conteudo-cookies">
             <p>Este site utiliza cookies (como os do Google AdSense) para melhorar sua experiência. Ao continuar
                 navegando, você concorda com nossa política.</p>
-            <button id="accept-cookies" class="btn-cookie">Aceitar</button>
+            <button id="btn-aceitar-cookies" class="btn-cookie">Aceitar</button>
         </div>
     </div>
 

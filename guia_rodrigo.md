@@ -1,51 +1,45 @@
-# 💍 Guia de Manutenção e Gestão (Rodrigo)
+# 💍 Guia de Manutenção Master (Versão PT-BR 3.2)
 
-Este guia contém todas as informações para gerenciar o site de casamento de Rodrigo & Jennifer (Versão Ultra Responsiva 3.1).
-
----
-
-### 1. O Cérebro do Site: `assets/data/content.json`
-Todo o conteúdo do site é controlado por este único arquivo. Para mudar textos, fotos ou links, edite os campos do JSON:
-- **`settings`**: Títulos e ID do RSVP.
-- **`hero`**: Nome principal e data.
-- **`story`**: Sua história (parágrafos ilimitados).
-- **`gallery`**: Lista de fotos (URL, descrição, data, local).
-- **`traje`**: Orientações para convidados.
-- **`faq`**: Perguntas frequentes.
-- **`gifts`**: Links de afiliados (Shopee e Mercado Livre).
-- **`location`**: Detalhes do local e link do mapa.
+Este guia contém as orientações para gerenciar o site de casamento de Rodrigo & Jennifer. Agora, todo o sistema interno está em Português para facilitar sua vida.
 
 ---
 
-### 2. Design e Responsividade (O Que Saber)
-- **Menu Mobile (Horizontal Sequencial):** O site usa uma navegação moderna onde todos os itens aparecem no topo em uma única linha. Não estranhe se no celular as fontes parecerem pequenas; isso foi feito para que todos os 8 itens (Início até Local) caibam perfeitamente na tela do seu celular, sem cortes e sem menu oculto.
-- **Header Compacto:** Reduzimos a altura para **40px** para sobrar mais espaço para o conteúdo e as fotos.
+### 1. Como Editar o Site (Arquivo `content.json`)
+Abra o arquivo `assets/data/content.json`. Tudo o que você precisa mudar está lá. As chaves agora são intuitivas:
+
+- **`configuracoes`**: Altere o título da aba e o ID do e-mail (Formspree).
+- **`inicio`**: Nomes do casal e data.
+- **`historia`**: Adicione quantos parágrafos quiser contando sua jornada.
+- **`galeria`**: Adicione novas fotos (URL, descrição, data e local).
+- **`traje`**: Mude as dicas de roupas para os convidados.
+- **`duvidas`**: Edite as perguntas e respostas do FAQ.
+- **`confirmacao`**: Mude o texto de introdução e a data limite do RSVP.
+- **`presentes`**: Seus links de afiliado da Shopee e Mercado Livre.
+- **`localizacao`**: Nome do local, endereço e links de mapas.
 
 ---
 
-### 3. Como configurar o RSVP (Confirmação de Presença)
-1. Crie uma conta em [formspree.io](https://formspree.io/).
-2. Obtenha o seu **ID de formulário** (ex: `mjvnbnrz`).
-3. No arquivo `assets/data/content.json`, substitua o valor do campo `"rsvpEmailId"` pelo seu novo ID.
+### 2. Como Configurar o RSVP (E-mails)
+1. Crie uma conta no [formspree.io](https://formspree.io/).
+2. Obtenha o seu ID (ex: `mjvnbnrz`).
+3. No `content.json`, em `configuracoes`, coloque seu ID em:
+   `"idEmailRSVP": "seu-id-aqui"`
 
 ---
 
-### 4. Checklist para Aprovação no AdSense 🟢
-1.  **Robots.txt:** Está na raiz, essencial para o Google ler seu site.
-2.  **Conteúdo Rico:** Se o Google reclamar de "Baixo Valor", abra o `content.json` e escreva parágrafos maiores na história ou adicione 5 novas perguntas no FAQ.
-3.  **Ad Placement:** Removemos o anúncio do topo para acelerar a aprovação (política de *ads above the fold*).
+### 3. Design e Celular
+- O menu agora é uma linha horizontal única no topo. 
+- Se no celular as palavras parecerem juntas, não se preocupe: isso foi feito para que todos os itens do menu (Início, História, etc.) caibam sem precisar de um menu escondido (hambúrguer).
 
 ---
 
-### 5. Como testar no computador
-Abra o terminal na pasta e execute:
-`python3 -m http.server 8000`
-Acesse: `http://localhost:8000`
+### 4. Checklist AdSense 🟢
+- **Robots.txt:** Já configurado na raiz.
+- **Anúncios:** O anúncio do topo foi removido para seguir as regras do Google e acelerar sua aprovação. Os anúncios aparecem agora apenas no **Meio** e no **Rodapé**.
 
 ---
 
-### 6. Como Vender como Modelo (Template)
-Este site foi desenhado para ser um produto de revenda:
-- **Facilidade:** O comprador só edita um arquivo JSON.
-- **Design:** Responsividade de alta fidelidade que funciona em celulares modernos.
-- **Monetização:** Já estruturado para anúncios do Google.
+### 5. Como Testar e Publicar
+- **Testar:** No terminal, rode `python3 -m http.server 8000` e acesse `http://localhost:8000`.
+- **Publicar:** Suba os arquivos para o **GitHub Pages** (gratuito) e o site estará no ar em minutos.
+- **Vender:** O projeto está pronto para ser vendido como um template brasileiro prático e rápido.
