@@ -92,5 +92,22 @@
         "cidade": "Belo Horizonte - MG",
         "linkMapa": "https://www.google.com/maps/dir//Rua+Aguanil+-+Vista+Alegre,+Belo+Horizonte+-+MG",
         "urlMapaIncorporado": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.5654512967265!2d-43.998393!3d-19.939223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa697a8731d6159%3A0x868b417e13768826!2sR.+Aguanil%2C+Belo+Horizonte+-+MG!5e0!3m2!1spt-BR!2sbr!4v1710860000000!5m2!1spt-BR!2sbr"
-    }
+    },
+    "artigos": [
+        {
+            "titulo": "Como escolher o traje ideal para casamentos à noite",
+            "resumo": "Dicas essenciais para não errar na escolha do look, do clássico ao moderno.",
+            "conteudo": "Escolher o traje para um casamento à noite exige atenção aos detalhes. Para homens, o terno escuro (azul marinho ou grafite) é a escolha mais segura e elegante. Já para as mulheres, vestidos midi ou longos com tecidos mais estruturados são ideais. Em Belo Horizonte, o clima costuma ser ameno à noite, então uma echarpe ou um paletó bem cortado são companheiros indispensáveis. Lembre-se: o conforto é a chave para aproveitar a festa até o fim!"
+        },
+        {
+            "titulo": "Dicas para Padrinhos: Como escolher a melhor roupa",
+            "resumo": "O papel do padrinho é de destaque, e o visual deve acompanhar essa importância.",
+            "conteudo": "Ser padrinho é uma honra, e o traje deve refletir isso. O ideal é seguir a paleta sugerida pelos noivos. Geralmente, tons de cinza ou azul são preferidos por serem atemporais. A diferença está nos detalhes: uma gravata bem amarrada, sapatos polidos e um bom corte fazem toda a diferença. Evite cores muito chamativas para não tirar o brilho dos noivos, mas não tenha medo de investir em um acessório que mostre sua personalidade, como um relógio clássico ou abotoaduras discretas."
+        },
+        {
+            "titulo": "O que não pode faltar em uma lista de presentes virtual",
+            "resumo": "Facilidade para os convidados e praticidade para os noivos: saiba como montar a sua.",
+            "conteudo": "A lista de presentes virtual se tornou a favorita dos casais modernos. O segredo para uma boa lista é a diversidade de preços, permitindo que todos os convidados participem de acordo com suas possibilidades. Itens essenciais incluem eletrodomésticos básicos, utensílios de cozinha de qualidade e mimos para a decoração. Além disso, muitos casais optam por 'cotas de lua de mel', uma forma criativa e prática de transformar o presente em experiências inesquecíveis. Facilite a vida do seu convidado com links diretos e descrições claras!"
+        }
+    ]
 }

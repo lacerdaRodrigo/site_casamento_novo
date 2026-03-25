@@ -96,6 +96,26 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
+        // Seção Dicas (Artigos/Blog) - NOVO para AdSense
+        const containerArtigos = document.getElementById('container-artigos');
+        if (containerArtigos && dados.artigos) {
+            containerArtigos.innerHTML = '';
+            dados.artigos.forEach(artigo => {
+                const itemArtigo = document.createElement('article');
+                itemArtigo.className = 'item-artigo';
+                itemArtigo.style.backgroundColor = '#fff';
+                itemArtigo.style.padding = '25px';
+                itemArtigo.style.borderRadius = '10px';
+                itemArtigo.style.boxShadow = '0 5px 15px rgba(0,0,0,0.05)';
+                itemArtigo.innerHTML = `
+                    <h3 style="color: #d4af37; font-family: 'Playfair Display', serif; margin-bottom: 15px;">${artigo.titulo}</h3>
+                    <p style="font-weight: 600; font-size: 0.9em; margin-bottom: 15px; color: #555;">${artigo.resumo}</p>
+                    <p style="font-size: 0.95em; line-height: 1.6; color: #666;">${artigo.conteudo}</p>
+                `;
+                containerArtigos.appendChild(itemArtigo);
+            });
+        }
+
         // Seção Confirmação (RSVP)
         if (document.getElementById('confirmacao-titulo')) document.getElementById('confirmacao-titulo').innerText = dados.confirmacao.titulo;
         if (document.getElementById('confirmacao-introducao')) {
